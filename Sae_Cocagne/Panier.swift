@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum Panier: String, Codable {
+    case panierSimple = "panier simple"
+    case panierFamilial = "familial"
+    case panierFruits = "panier fruits"
+}
+
