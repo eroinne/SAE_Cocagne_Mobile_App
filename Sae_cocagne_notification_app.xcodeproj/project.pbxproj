@@ -14,6 +14,8 @@
 		1EBAE81F2BA1FAEB002E2B3D /* Sae_cocagne_notification_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAE81E2BA1FAEB002E2B3D /* Sae_cocagne_notification_appTests.swift */; };
 		1EBAE8292BA1FAEB002E2B3D /* Sae_cocagne_notification_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAE8282BA1FAEB002E2B3D /* Sae_cocagne_notification_appUITests.swift */; };
 		1EBAE82B2BA1FAEB002E2B3D /* Sae_cocagne_notification_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAE82A2BA1FAEB002E2B3D /* Sae_cocagne_notification_appUITestsLaunchTests.swift */; };
+		1EBAE83E2BA1FE4D002E2B3D /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EBAE83D2BA1FE4D002E2B3D /* logo.png */; };
+		1EBAE8412BA2099C002E2B3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAE8402BA2099C002E2B3D /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		1EBAE8242BA1FAEB002E2B3D /* Sae_cocagne_notification_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sae_cocagne_notification_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EBAE8282BA1FAEB002E2B3D /* Sae_cocagne_notification_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sae_cocagne_notification_appUITests.swift; sourceTree = "<group>"; };
 		1EBAE82A2BA1FAEB002E2B3D /* Sae_cocagne_notification_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sae_cocagne_notification_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1EBAE83D2BA1FE4D002E2B3D /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		1EBAE8402BA2099C002E2B3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1ED762522BA21825004E7E24 /* Sae-cocagne-notification-app-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Sae-cocagne-notification-app-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +99,13 @@
 		1EBAE80C2BA1FAE9002E2B3D /* Sae_cocagne_notification_app */ = {
 			isa = PBXGroup;
 			children = (
+				1ED762522BA21825004E7E24 /* Sae-cocagne-notification-app-Info.plist */,
+				1EBAE83F2BA20043002E2B3D /* Image */,
 				1EBAE80D2BA1FAE9002E2B3D /* Sae_cocagne_notification_appApp.swift */,
 				1EBAE80F2BA1FAE9002E2B3D /* ContentView.swift */,
 				1EBAE8112BA1FAEB002E2B3D /* Assets.xcassets */,
 				1EBAE8132BA1FAEB002E2B3D /* Preview Content */,
+				1EBAE8402BA2099C002E2B3D /* ViewController.swift */,
 			);
 			path = Sae_cocagne_notification_app;
 			sourceTree = "<group>";
@@ -125,6 +133,14 @@
 				1EBAE82A2BA1FAEB002E2B3D /* Sae_cocagne_notification_appUITestsLaunchTests.swift */,
 			);
 			path = Sae_cocagne_notification_appUITests;
+			sourceTree = "<group>";
+		};
+		1EBAE83F2BA20043002E2B3D /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				1EBAE83D2BA1FE4D002E2B3D /* logo.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +249,7 @@
 			files = (
 				1EBAE8152BA1FAEB002E2B3D /* Preview Assets.xcassets in Resources */,
 				1EBAE8122BA1FAEB002E2B3D /* Assets.xcassets in Resources */,
+				1EBAE83E2BA1FE4D002E2B3D /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EBAE8412BA2099C002E2B3D /* ViewController.swift in Sources */,
 				1EBAE8102BA1FAE9002E2B3D /* ContentView.swift in Sources */,
 				1EBAE80E2BA1FAE9002E2B3D /* Sae_cocagne_notification_appApp.swift in Sources */,
 			);
@@ -425,6 +443,7 @@
 				DEVELOPMENT_TEAM = CCT65684XG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sae-cocagne-notification-app-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +473,7 @@
 				DEVELOPMENT_TEAM = CCT65684XG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sae-cocagne-notification-app-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

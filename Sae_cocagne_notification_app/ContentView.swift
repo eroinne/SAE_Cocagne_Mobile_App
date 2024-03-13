@@ -1,24 +1,39 @@
-//
-//  ContentView.swift
-//  Sae_cocagne_notification_app
-//
-//  Created by Ero on 13/03/2024.
-//
+import SwiftUI
+import UserNotifications
 
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewController = ViewController()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Notification app")
+                .padding()
+            if let logoImage = UIImage(named: "logo", in: Bundle.main, with: nil) {
+                Image(uiImage: logoImage)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .onTapGesture {
+                        if viewController.notificationPermissionGranted {
+                            print("Notification permission granted")
+                            viewController.dispatchNotification()
+                        }
+                    }
+            }
         }
-        .padding()
+        .onAppear {
+            viewController.checkForNotificationPermission()
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
 
 #Preview {
-    ContentView()
+  ContentView()
 }
